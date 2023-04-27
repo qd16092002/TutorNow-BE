@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "DEV_MODE=true nodemon ./src/index.js",
+    "dev": "nodemon ./src/index.js",
     "start": "node ./src/index.js",
     "build": "esbuild ./src/index.js --platform=node --bundle --minify --outfile=bundle.js --external:./node_modules/*"
   },
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "esbuild": "^0.15.10",
+    "nodemon": "^2.0.22",
     "prettier": "2.7.1"
   }
 }
